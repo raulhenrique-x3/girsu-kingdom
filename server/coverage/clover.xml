@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1676497137269" clover="3.2.0">
-  <project timestamp="1676497137270" name="All files">
-    <metrics statements="170" coveredstatements="157" conditionals="12" coveredconditionals="9" methods="2" coveredmethods="2" elements="184" coveredelements="168" complexity="0" loc="170" ncloc="170" packages="5" files="6" classes="6"/>
+<coverage generated="1676498938014" clover="3.2.0">
+  <project timestamp="1676498938014" name="All files">
+    <metrics statements="199" coveredstatements="165" conditionals="12" coveredconditionals="9" methods="3" coveredmethods="2" elements="214" coveredelements="176" complexity="0" loc="199" ncloc="199" packages="6" files="7" classes="7"/>
     <package name="src">
-      <metrics statements="37" coveredstatements="29" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="36" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.ts" path="C:\Users\Raul\Desktop\Projetos\girsu-kingdom\server\src\index.ts">
-        <metrics statements="37" coveredstatements="29" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="36" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -31,7 +31,7 @@
         <line num="23" count="1" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
@@ -39,10 +39,9 @@
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.__test__.userController">
@@ -74,6 +73,41 @@
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.controllers.sessionController">
+      <metrics statements="29" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="SessionController.ts" path="C:\Users\Raul\Desktop\Projetos\girsu-kingdom\server\src\controllers\sessionController\SessionController.ts">
+        <metrics statements="29" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.controllers.userController">
@@ -193,9 +227,9 @@
       </file>
     </package>
     <package name="src.routes">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="Router.ts" path="C:\Users\Raul\Desktop\Projetos\girsu-kingdom\server\src\routes\Router.ts">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -203,6 +237,7 @@
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
       </file>
     </package>
   </project>

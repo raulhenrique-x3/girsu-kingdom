@@ -12,7 +12,7 @@ jest.setTimeout(60000);
 
 beforeEach(async () => {
   await mongoose
-    .connect("mongodb+srv://raulheri25:986469841@cluster0.bpqn1km.mongodb.net/JEST-TEST?retryWrites=true&w=majority")
+    .connect(process.env.DB_TEST!)
     .then(() => console.log("Connected to TEST MongoDB"))
     .catch((error) => console.error("Could not connect to TEST MongoDB", error));
 });
