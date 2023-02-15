@@ -37,11 +37,11 @@ export default {
         if (error) {
           return res.status(400).send({ message: "Fill in the fields correctly" });
         } else {
-          return res.status(200).send("User successfully registered!");
+          return res.status(200).send({ message: "User successfully registered!" });
         }
       });
     } catch (error) {
-      throw res.status(400).send({ message: "Fill in the fields correctly" });
+      throw res.status(500).send({ message: "Internal server error" });
     }
   },
 };

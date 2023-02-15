@@ -21,6 +21,7 @@ mongoose
   .connect(process.env.DB_HOST!)
   .then(() => console.log("Connected to MongoDB"))
   .catch((error) => console.error("Could not connect to MongoDB", error));
+// .finally(() => mongoose.connection.close());
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   if (err instanceof Error) {
