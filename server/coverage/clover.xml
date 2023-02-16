@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1676498938014" clover="3.2.0">
-  <project timestamp="1676498938014" name="All files">
-    <metrics statements="199" coveredstatements="165" conditionals="12" coveredconditionals="9" methods="3" coveredmethods="2" elements="214" coveredelements="176" complexity="0" loc="199" ncloc="199" packages="6" files="7" classes="7"/>
+<coverage generated="1676504156881" clover="3.2.0">
+  <project timestamp="1676504156882" name="All files">
+    <metrics statements="235" coveredstatements="219" conditionals="29" coveredconditionals="23" methods="3" coveredmethods="3" elements="267" coveredelements="245" complexity="0" loc="235" ncloc="235" packages="7" files="9" classes="9"/>
     <package name="src">
       <metrics statements="36" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.ts" path="C:\Users\Raul\Desktop\Projetos\girsu-kingdom\server\src\index.ts">
@@ -44,8 +44,35 @@
         <line num="36" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="src.__test__.sessionController">
+      <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="SessionMock.ts" path="C:\Users\Raul\Desktop\Projetos\girsu-kingdom\server\src\__test__\sessionController\SessionMock.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+      <file name="SessionWrongMock.ts" path="C:\Users\Raul\Desktop\Projetos\girsu-kingdom\server\src\__test__\sessionController\SessionWrongMock.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="src.__test__.userController">
-      <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="34" coveredstatements="34" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="UserMock.ts" path="C:\Users\Raul\Desktop\Projetos\girsu-kingdom\server\src\__test__\userController\UserMock.ts">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
@@ -61,7 +88,7 @@
         <line num="11" count="1" type="stmt"/>
       </file>
       <file name="UserWrongMock.ts" path="C:\Users\Raul\Desktop\Projetos\girsu-kingdom\server\src\__test__\userController\UserWrongMock.ts">
-        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -73,94 +100,112 @@
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.controllers.sessionController">
-      <metrics statements="29" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="30" coveredstatements="26" conditionals="13" coveredconditionals="9" methods="1" coveredmethods="1"/>
       <file name="SessionController.ts" path="C:\Users\Raul\Desktop\Projetos\girsu-kingdom\server\src\controllers\sessionController\SessionController.ts">
-        <metrics statements="29" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="30" coveredstatements="26" conditionals="13" coveredconditionals="9" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="4" type="cond" truecount="0" falsecount="1"/>
         <line num="22" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
+        <line num="24" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="26" count="4" type="cond" truecount="0" falsecount="1"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.controllers.userController">
-      <metrics statements="47" coveredstatements="42" conditionals="12" coveredconditionals="9" methods="2" coveredmethods="2"/>
+      <metrics statements="52" coveredstatements="48" conditionals="16" coveredconditionals="14" methods="2" coveredmethods="2"/>
       <file name="UserController.ts" path="C:\Users\Raul\Desktop\Projetos\girsu-kingdom\server\src\controllers\userController\UserController.ts">
-        <metrics statements="47" coveredstatements="42" conditionals="12" coveredconditionals="9" methods="2" coveredmethods="2"/>
+        <metrics statements="52" coveredstatements="48" conditionals="16" coveredconditionals="14" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="cond" truecount="0" falsecount="1"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="21" count="3" type="cond" truecount="3" falsecount="0"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="21" count="10" type="cond" truecount="2" falsecount="0"/>
         <line num="22" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
-        <line num="24" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="26" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="10" type="cond" truecount="3" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="36" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="37" count="1" type="cond" truecount="0" falsecount="1"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="3" type="cond" truecount="0" falsecount="1"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
+        <line num="28" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="30" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="41" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="42" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="45" count="3" type="stmt"/>
         <line num="46" count="3" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
+        <line num="48" count="10" type="cond" truecount="0" falsecount="1"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="10" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.models.userModel">

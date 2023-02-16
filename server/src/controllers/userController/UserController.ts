@@ -18,6 +18,10 @@ export default {
     try {
       const { userName, userEmail, userPassword }: IUserModel = req.body;
 
+      if (userPassword.length < 8 && userPassword.length > 0) {
+        return res.status(400).send({ message: "Password must be 8 or more characters" });
+      }
+
       if (!userName || !userEmail || !userPassword) {
         return res.status(400).send({ message: "Please, fill the fields" });
       }
@@ -33,6 +37,7 @@ export default {
         userEmail,
         userPassword: hashedPassword,
       });
+
       newUser.save((error: any) => {
         if (error) {
           return res.status(400).send({ message: "Fill in the fields correctly" });

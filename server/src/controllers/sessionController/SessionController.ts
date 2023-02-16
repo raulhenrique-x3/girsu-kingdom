@@ -16,7 +16,8 @@ export default {
         return res.status(400).send({ message: "User not found" });
       }
 
-      const validPassword = await bCrypt.compare(userPassword, userAlreadyExists?.userPassword);
+      const validPassword = await bCrypt.compare(userPassword, userAlreadyExists?.userPassword!);
+
       if (!validPassword) {
         return res.status(400).send({ message: "Wrong email or password" });
       }

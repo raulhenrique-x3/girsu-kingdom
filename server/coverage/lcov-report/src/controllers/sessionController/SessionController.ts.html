@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">27.58% </span>
+                <span class="strong">86.66% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/29</span>
+                <span class='fraction'>26/30</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">69.23% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>9/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">27.58% </span>
+                <span class="strong">86.66% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/29</span>
+                <span class='fraction'>26/30</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -92,34 +92,36 @@
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Request, Response } from "express";
 import { IUserModel } from "../../models/userModel/interfaceIUserModel";
@@ -127,28 +129,29 @@ import User from "../../models/userModel/userModel";
 import bCrypt from "bcrypt";
 &nbsp;
 export default {
-  async <span class="fstat-no" title="function not covered" >create(req: Request, res: Response) {</span>
-<span class="cstat-no" title="statement not covered" >    try {</span>
-<span class="cstat-no" title="statement not covered" >      const { userEmail, userPassword }: IUserModel = req.body;</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >      if (!userEmail || !userPassword) {</span>
-<span class="cstat-no" title="statement not covered" >        return res.status(400).send({ message: "Fill the fields correctly" });</span>
-<span class="cstat-no" title="statement not covered" >      }</span>
-<span class="cstat-no" title="statement not covered" >      const userAlreadyExists = await User.findOne&lt;Promise&lt;IUserModel&gt;&gt;({ userEmail });</span>
-<span class="cstat-no" title="statement not covered" >      if (!userAlreadyExists) {</span>
-<span class="cstat-no" title="statement not covered" >        return res.status(400).send({ message: "User not found" });</span>
-<span class="cstat-no" title="statement not covered" >      }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >      const validPassword = await bCrypt.compare(userPassword, userAlreadyExists?.userPassword);</span>
-<span class="cstat-no" title="statement not covered" >      if (!validPassword) {</span>
+  async create(req: Request, res: Response) {
+    try {
+      const { userEmail, userPassword }: IUserModel = req.body;
+&nbsp;
+      if (!userEmail || !userPassword) {
+        return res.status(400).send({ message: "Fill the fields correctly" });
+      }
+      const userAlreadyExists = await User.findOne&lt;Promise&lt;IUserModel&gt;&gt;({ userEmail });
+      if (!userAlreadyExists) {
+        return res.status(400).send({ message: "User not found" });
+      }
+&nbsp;
+      const validPassword = await bCrypt.compare(userPassword, userAlreadyExists<span class="branch-0 cbranch-no" title="branch not covered" >?.u</span>serPassword!);
+&nbsp;
+      if (!validPassword) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >        return res.status(400).send({ message: "Wrong email or password" });</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >      return userAlreadyExists &amp;&amp; res.send({ userEmail: userAlreadyExists?.userEmail });</span>
-<span class="cstat-no" title="statement not covered" >    } catch (error) {</span>
+&nbsp;
+      return userAlreadyExists &amp;&amp; res.send({ userEmail: userAlreadyExists<span class="branch-0 cbranch-no" title="branch not covered" >?.u</span>serEmail });
+    } <span class="branch-0 cbranch-no" title="branch not covered" >catch (error) {</span>
 <span class="cstat-no" title="statement not covered" >      return res.status(500).send({ message: "Internal server error" });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" >  },</span>
+  },
 };
 &nbsp;</pre></td></tr></table></pre>
 
@@ -157,7 +160,7 @@ export default {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-02-15T22:08:57.977Z
+                at 2023-02-15T23:35:56.815Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
