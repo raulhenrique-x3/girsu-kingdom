@@ -3,10 +3,11 @@ import React from "react";
 
 interface IProps {
   title: string;
+  placeHolder: string;
   onChange: (e: any) => void;
 }
 
-export const TitleInput: React.FC<IProps> = ({ title, onChange }) => {
+export const TitleInput: React.FC<IProps> = ({ title, onChange, placeHolder }) => {
   return (
     <div>
       <Text fontSize="xl" color={"#ffffff"}>
@@ -20,7 +21,7 @@ export const TitleInput: React.FC<IProps> = ({ title, onChange }) => {
         bg={"#D9D9D9"}
         pr="4.5rem"
         type={"text"}
-        placeholder="johndoe@email.com"
+        placeholder={placeHolder}
         onChange={onChange}
       />
     </div>

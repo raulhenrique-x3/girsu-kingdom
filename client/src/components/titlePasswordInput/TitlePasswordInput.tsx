@@ -3,14 +3,16 @@ import { Button, Input, InputGroup, InputRightElement, Text } from "@chakra-ui/r
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 interface IProps {
   onChange: (e: any) => void;
+  placeHolder: string;
+  title: string;
 }
 
-export const TitlePasswordInput: React.FC<IProps> = ({ onChange }) => {
+export const TitlePasswordInput: React.FC<IProps> = ({ onChange, placeHolder, title }) => {
   const [show, setShow] = useState(false);
   return (
     <div>
       <Text fontSize="xl" color={"#ffffff"}>
-        Password
+        {title}
       </Text>
       <InputGroup size="md">
         <Input
@@ -19,7 +21,7 @@ export const TitlePasswordInput: React.FC<IProps> = ({ onChange }) => {
           onChange={onChange}
           pr="4.5rem"
           type={show ? "text" : "password"}
-          placeholder="Enter password"
+          placeholder={placeHolder}
           paddingTop={8}
           paddingBottom={8}
           display={"flex"}

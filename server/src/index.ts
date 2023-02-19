@@ -17,10 +17,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(router);
 dotenv.config({ path: "./src/.env" });
 
-// mongoose
-//   .connect(process.env.DB_HOST!)
-//   .then(() => console.log("Connected to MongoDB"))
-//   .catch((error) => console.error("Could not connect to MongoDB", error));
+mongoose
+  .connect(process.env.DB_HOST!)
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((error) => console.error("Could not connect to MongoDB", error));
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   if (err instanceof Error) {

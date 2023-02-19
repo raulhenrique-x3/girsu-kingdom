@@ -1,0 +1,42 @@
+.registerMain {
+  width: 100%;
+  height: 100%;
+  background-color: #023047;
+}
+
+.registerLogoContainer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerLogoImg {
+  width: 100%;
+  height: 100%;
+}
+
+.registerContainerDiv {
+  padding: 0 24px 0 24px;
+}
+
+@media (min-width: 768px) {
+  .registerMain {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .registerLogoContainer {
+    width: 50%;
+  }
+
+  .registerLogoImg {
+    height: 50vh;
+  }
+  .registerContainerDiv {
+    width: 50%;
+  }
+}
