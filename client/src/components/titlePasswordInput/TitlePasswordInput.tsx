@@ -14,6 +14,7 @@ export const TitlePasswordInput: React.FC<IProps> = ({ onChange }) => {
       </Text>
       <InputGroup size="md">
         <Input
+          data-testid={"TitlePasswordInput"}
           bg={"#D9D9D9"}
           onChange={onChange}
           pr="4.5rem"

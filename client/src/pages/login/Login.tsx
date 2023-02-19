@@ -6,10 +6,11 @@ import LOGO from "../../assets/LOGO.svg";
 import styles from "./login.module.scss";
 
 export const Login = () => {
-  const [password, setPassword] = useState<string>();
-  console.log(password);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
-    <main className={styles.loginMain}>
+    <main className={styles.loginMain} data-testid={"LoginPage"}>
       <div className={styles.loginLogoContainer}>
         <img
           className={styles.loginLogoImg}
@@ -19,9 +20,17 @@ export const Login = () => {
       </div>
       <div className={styles.loginContainerDiv}>
         <Container>
-          <TitleInput title="Email" />
+          <TitleInput title="Email" onChange={(e) => setEmail(e.target.value)} />
           <TitlePasswordInput onChange={(e) => setPassword(e.target.value)} />
-          <Button marginTop={4} p={8} width={"100%"} bg={"#FB8500"} color={"#023047"} borderRadius={50}>
+          <Button
+            data-testid={"LoginButton"}
+            marginTop={4}
+            p={8}
+            width={"100%"}
+            bg={"#FB8500"}
+            color={"#023047"}
+            borderRadius={50}
+          >
             Login
           </Button>
           <Text marginTop={4} textAlign={"center"} color={"#ffffff"} fontWeight={"bold"} fontSize={"sm"}>
