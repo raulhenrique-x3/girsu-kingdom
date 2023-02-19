@@ -1,12 +1,15 @@
 import { fireEvent, render } from "@testing-library/react";
 import { Login } from "../../pages/login/Login";
+import "@testing-library/jest-dom";
 
 describe("Login page", () => {
   it("Input fields are present", () => {
     const { getByTestId } = render(<Login />);
     const loginPage = getByTestId("LoginPage");
-    expect(loginPage).toContainElement(getByTestId("TitleInput"));
-    expect(loginPage).toContainElement(getByTestId("TitlePasswordInput"));
+    const buttonTitle = getByTestId("TitleInput");
+    const buttonPassword = getByTestId("TitlePasswordInput");
+    expect(loginPage).toContainElement(buttonTitle);
+    expect(loginPage).toContainElement(buttonPassword);
   });
 
   it("Input fields are functioning correctly", () => {
