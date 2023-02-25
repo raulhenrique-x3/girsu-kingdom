@@ -2,6 +2,9 @@ import { Request, Response } from "express";
 import { IUserModel } from "../../models/userModel/interfaceIUserModel";
 import User from "../../models/userModel/userModel";
 import bCrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+import dotenv from "dotenv";
+dotenv.config({ path: "./src/.env" });
 
 export default {
   async create(req: Request, res: Response) {
@@ -16,13 +19,21 @@ export default {
         return res.status(400).send({ message: "User not found" });
       }
 
-      const validPassword = await bCrypt.compare(userPassword, userAlreadyExists?.userPassword!);
+      const validPassword = await bCrypt.compare(userPassword, userAlreadyExists?.userPassword);
 
       if (!validPassword) {
         return res.status(400).send({ message: "Wrong email or password" });
       }
-
-      return userAlreadyExists && res.send({ userEmail: userAlreadyExists?.userEmail });
+      const token = jwt.sign(
+        {
+          email: userAlreadyExists,
+        },
+        process.env.JWT_KEY!,
+        {
+          expiresIn: "1h",
+        }
+      );
+      return userAlreadyExists && res.send({ userEmail: userAlreadyExists?.userEmail, token: token });
     } catch (error) {
       return res.status(500).send({ message: "Internal server error" });
     }
