@@ -4,13 +4,14 @@ export default interface ILastReportModel {
   subTitle: string;
   description: string;
   cardGameName: string;
-  id: number;
+  date: string;
   comments: [
     {
       userName: string;
       userId: number;
-      date: number;
+      date: string;
       likes: number;
+      comment: string;
     }
   ];
   likes: number;

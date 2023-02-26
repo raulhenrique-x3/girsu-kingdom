@@ -13,7 +13,8 @@ interface RequestWithUserRole extends Request {
 }
 export const verifyToken = (req: RequestWithUserRole, res: Response, next: NextFunction) => {
   try {
-    const decode = jwt.verify(req.body.token, process.env.JWT_KEY!);
+    const token = req.headers.authorization?.split(" ")[1];
+    const decode = jwt.verify(token!, process.env.JWT_KEY!);
     req.user = decode;
     next();
   } catch (error) {
